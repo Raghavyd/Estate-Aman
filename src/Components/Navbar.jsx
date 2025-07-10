@@ -32,7 +32,7 @@ return ()=>{
                 
                  {isAuthenticated && <h3 className='text-lg text-white sm:2xl font-light  mb-2'>Welcome,<span
                  className='underline 
-            underline-offset-4 decoration-1 text-white font-bold under '>{user.name}</span></h3>}
+            underline-offset-4 decoration-1 text-white font-bold under '> {user.name.split(" ")[0]}</span></h3>}
                 {isAuthenticated?<button className='hidden bg-red-400 md:block bg px-8 py-2 rounded-full justify-end' onClick={(e)=>logout()}>Log out</button>
                 :<button onClick={(e)=>loginWithRedirect()} 
                 className='hidden md:block bg-white px-8 py-2 rounded-full'>Login</button>}
